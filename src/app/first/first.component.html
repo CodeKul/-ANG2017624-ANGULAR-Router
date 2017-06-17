@@ -1,7 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <input type="button" (click)="dt = !dt" class="btn btn-primary" value="Change"> {{dt}}
+     <input type="text" #usNm><input type="password" #pass> <input class="btn btn-success" type="button" (click)="login(usNm.value, pass.value)" value="login" > 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <a [routerLink]="['forgot','codekul']">Forget Password</a>
     </div>
   </div>
 </div>
