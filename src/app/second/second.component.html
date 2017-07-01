@@ -9,3 +9,16 @@
      <input type="text" #chUsNm> <input type="button" value="Okay" (click)="changeUsNm(chUsNm.value)">
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-md-12">
+     <a [routerLink]="['profile']" class="btn btn-primary">Profile</a>
+     <a [routerLink]="['payment']" class="btn btn-primary">Payment</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
