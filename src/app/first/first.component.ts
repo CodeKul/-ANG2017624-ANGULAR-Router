@@ -16,6 +16,10 @@ export class FirstComponent implements OnInit {
   }
 
   login(usNm, pass) {
-    this.router.navigate(['second', usNm]);
+    this.router.navigate(['second', usNm], {
+      queryParams: {
+        ver : new Date().getMilliseconds()
+      }
+    });
   }
 }

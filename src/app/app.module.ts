@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { ForgetComponent } from './forget/forget.component';
+import { ProfileComponent } from './second/profile.component';
+import { PaymentComponent } from './second/payment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     SecondComponent,
-    ForgetComponent
+    ForgetComponent,
+    ProfileComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
