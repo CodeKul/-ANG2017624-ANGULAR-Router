@@ -3,3 +3,9 @@
       <h3>Welcome {{usNm}}</h3>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-md-12">
+     <input type="text" #chUsNm> <input type="button" value="Okay" (click)="changeUsNm(chUsNm.value)">
+    </div>
+  </div>
