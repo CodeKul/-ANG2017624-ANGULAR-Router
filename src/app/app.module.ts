@@ -1,3 +1,4 @@
+import { ForgetService } from './forget.service';
 import { MyRouterModule } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -26,7 +27,7 @@ import { PaymentComponent } from './second/payment.component';
     HttpModule,
     MyRouterModule
   ],
-  providers: [],
+  providers: [ForgetService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
